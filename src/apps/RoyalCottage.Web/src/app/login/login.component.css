@@ -1,0 +1,30 @@
+.rememberme .custom-control {
+  padding-left:0px;
+  margin-top:10px;
+}
+
+.login .card-header{
+  background:transparent !important;
+}
+
+.login .card {
+  box-shadow: 0 0 20px #eae9e9;
+  margin-top: 50px;
+}
+
+.login .btn {
+  border-radius: 0px;
+  padding: 10px 15px;
+  font-size: 20px;
+  padding: 10px 75px;
+}
+
+  .login .btn:hover {
+    background: #fff;
+    border: solid 1px #d9271d;
+    color: #d9271d;
+  }
+
+.login .form-control {
+  padding: .3rem 1rem;
+}

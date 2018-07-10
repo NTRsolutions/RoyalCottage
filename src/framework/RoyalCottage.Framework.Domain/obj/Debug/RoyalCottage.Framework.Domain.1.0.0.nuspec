@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RoyalCottage.Framework.Domain</id>
+    <version>1.0.0</version>
+    <authors>RoyalCottage.Framework.Domain</authors>
+    <owners>RoyalCottage.Framework.Domain</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="RoyalCottage.Framework.Core" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="RoyalCottage.Framework.Couchbase" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\RoyalCottage\src\nuget\RoyalCottage.Framework.Domain\netstandard2.0\RoyalCottage.Framework.Domain.dll" target="lib\netstandard2.0\RoyalCottage.Framework.Domain.dll" />
+  </files>
+</package>

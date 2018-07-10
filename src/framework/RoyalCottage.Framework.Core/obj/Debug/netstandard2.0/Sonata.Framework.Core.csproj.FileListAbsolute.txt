@@ -1,0 +1,17 @@
+E:\CWB\src\nuget\Sonata.Framework.Core\netstandard2.0\Sonata.Framework.Core.deps.json
+E:\CWB\src\nuget\Sonata.Framework.Core\netstandard2.0\Sonata.Framework.Core.dll
+E:\CWB\src\nuget\Sonata.Framework.Core\netstandard2.0\Sonata.Framework.Core.pdb
+E:\CWB\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.csprojAssemblyReference.cache
+E:\CWB\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.csproj.CoreCompileInputs.cache
+E:\CWB\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.AssemblyInfoInputs.cache
+E:\CWB\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.AssemblyInfo.cs
+E:\CWB\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.dll
+E:\CWB\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.pdb
+E:\RoyalCottage\src\nuget\Sonata.Framework.Core\netstandard2.0\Sonata.Framework.Core.deps.json
+E:\RoyalCottage\src\nuget\Sonata.Framework.Core\netstandard2.0\Sonata.Framework.Core.dll
+E:\RoyalCottage\src\nuget\Sonata.Framework.Core\netstandard2.0\Sonata.Framework.Core.pdb
+E:\RoyalCottage\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.AssemblyInfo.cs
+E:\RoyalCottage\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.dll
+E:\RoyalCottage\src\framework\Sonata.Framework.Core\obj\Debug\netstandard2.0\Sonata.Framework.Core.pdb

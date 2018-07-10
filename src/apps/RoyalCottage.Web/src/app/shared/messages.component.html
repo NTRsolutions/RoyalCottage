@@ -1,0 +1,9 @@
+<div *ngIf="messageService.successMessages.length" style="background-color:greenyellow">
+  <div *ngFor='let message of messageService.successMessages'> {{message}} </div>
+  <button class="hover" (click)="messageService.clearSuccess()">clear</button>
+</div>
+
+<div *ngIf="messageService.failureMessages.length" style="background-color:red">
+  <div *ngFor='let message of messageService.failureMessages'> {{message}} </div>
+  <button class="hover" (click)="messageService.clearFailure()">clear</button>
+</div>

@@ -1,0 +1,131 @@
+  <div class="container-fluid" *ngIf="ctcbreakup | async ; let ctcbreakup">
+    <form novalidate (ngSubmit)="onSubmit()" #createCTCBreakUp="ngForm">
+      <section class="form-1column">
+        <div class="row">
+          <!--Name-->
+          <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+              <label>Name <span class="mandatory">*</span></label>
+              <input type="text" class="form-control" name="name" minlength="12" maxlength="30"
+                     [(ngModel)]="ctcbreakup.name" #name="ngModel" required>
+              <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+                <div *ngIf="name.errors.required">
+                  Name is required.
+                </div>
+                <div *ngIf="name.hasError('minlength')">
+                  Name must be at least 12 characters long.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Description-->
+          <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+              <label>Description</label>
+              <textarea name="description" [(ngModel)]="ctcbreakup.description" class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <!--Grade-->
+          <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+              <label for="email">Grade<span class="mandatory">*</span></label>
+              <select [(ngModel)]="ctcbreakup.grade" name="grades" class="form-control" required #gradetype="ngModel">
+                <option [ngValue]="undefined" disabled>Select a Grade</option>
+                <option *ngFor="let x of gradetype | async" [value]="x.entityId">{{x.name}}</option>
+              </select>
+            </div>
+          </div>
+          <!--Status-->
+          <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+              <label>Status</label>
+              <select class="form-control">
+                <option>Active</option>
+                <option>Inactive</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!--Earnings-->
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="heading-bars">Earnings</div>
+            <!--Basic-->
+            <div class="form-group">
+              <label>Basic<span class="mandatory">*</span></label>
+              <input type="text" class="form-control" name="basic"
+                     [(ngModel)]="ctcbreakup.basic" #name="ngModel" required>
+              <div *ngIf="basic.invalid && basic.touched" class="alert alert-danger">
+                <div *ngIf="basic.errors.required">
+                  Basic Salary is required.
+                </div>
+              </div>
+            </div>
+            <!--HRA-->
+            <div class="form-group">
+              <label>HRA</label>
+              <input type="text" class="form-control" name="hra"
+                     [(ngModel)]="ctcbreakup.hra" #name="ngModel" required>
+            </div>
+            <!--Conveyance-->
+            <div class="form-group">
+              <label>Conveyance</label>
+              <input type="text" class="form-control" name="conveyance"
+                     [(ngModel)]="ctcbreakup.conveyance" #name="ngModel" required>
+            </div>
+            <!--Medical-->
+            <div class="form-group">
+              <label>Medical</label>
+              <input type="text" class="form-control" name="medical"
+                     [(ngModel)]="ctcbreakup.medical" #name="ngModel" required>
+            </div>
+            <!--Supplementary-->
+            <div class="form-group">
+              <label>Supplementary</label>
+              <input type="text" class="form-control" name="supplementary"
+                     [(ngModel)]="ctcbreakup.supplementary" #name="ngModel" required>
+            </div>
+            <!--Education-->
+            <div class="form-group">
+              <label>Education</label>
+              <input type="text" class="form-control" name="education"
+                     [(ngModel)]="ctcbreakup.education" #name="ngModel" required>
+            </div>
+            <!--FoodCoupon-->
+            <div class="form-group">
+              <label>Food Coupon</label>
+              <input type="text" class="form-control" name="foodcoupon"
+                     [(ngModel)]="ctcbreakup.foodcoupon" #name="ngModel" required>
+            </div>
+          </div>
+          <!--Deductions-->
+          <div class="col-md-6 col-xs-12">
+            <div class="heading-bars">Deductions</div>
+            <!--Profession Tax-->
+            <div class="form-group">
+              <label>Profession Tax</label>
+              <input type="text" class="form-control" name="professiontax"
+                     [(ngModel)]="ctcbreakup.professiontax" #name="ngModel" required>
+            </div>
+            <!--Income Tax-->
+            <div class="form-group">
+              <label>Income Tax</label>
+              <input type="text" class="form-control" name="incometax"
+                     [(ngModel)]="ctcbreakup.incometax" #name="ngModel" required>
+            </div>
+            <!--PF-->
+            <div class="form-group">
+              <label>Provident Fund (PF)</label>
+              <input type="text" class="form-control" name="pf"
+                     [(ngModel)]="ctcbreakup.pf" #name="ngModel" required>
+            </div>
+          </div>
+        </div>
+        <div class="bd-example pull-right">
+          <button type="submit" class="btn btn-default" [disabled]="!createCTCBreakUp.form.valid"> Save </button>
+          <button type="submit" class="btn btn-default">Cancel</button>
+        </div>
+      </section>
+    </form>
+  </div>

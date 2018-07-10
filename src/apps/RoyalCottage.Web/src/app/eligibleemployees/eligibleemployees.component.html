@@ -1,0 +1,649 @@
+<!--<style>
+  [project="eligibleemployees-tab"] .tabs[_ngcontent-c3] {
+    width: 100%;
+    font-family: 'Segoe UI';
+    margin: 0px;
+  }
+
+  [project="eligibleemployees-tab"] {
+    background-color: #ececec;
+    min-height: 70px;
+    line-height: 34px;
+  }
+
+    [project="eligibleemployees-tab"]
+    .tabs[_ngcontent-c3] [id^="tab"][_ngcontent-c3]:checked + label[_ngcontent-c3] {
+      border-bottom: 5px solid #e40000;
+      background: transparent !important;
+    }
+
+    [project="eligibleemployees-tab"] ul li a {
+      font-family: Segoe UI Light;
+      font-size: 18px;
+    }
+
+    [project="eligibleemployees-tab"] ul li a {
+      font-family: inherit;
+    }
+
+    [project="eligibleemployees-tab"]
+    .tabs[_ngcontent-c3] .tab-content[_ngcontent-c3] {
+      background: transparent !important;
+      top: 65px !important;
+    }
+
+
+    [project="eligibleemployees-tab"]
+    .tabs[_ngcontent-c3] label[_ngcontent-c3]:hover {
+      border-bottom: 5px solid #e40000;
+      color: #e40000;
+      background: transparent !important;
+    }
+
+    [project="eligibleemployees-tab"]
+    .tabs[_ngcontent-c3] label[_ngcontent-c3] {
+      background: transparent !important;
+      top: 3px;
+      text-transform: capitalize;
+    }
+
+    [project="eligibleemployees-tab"] .tabs[_ngcontent-c3] li[_ngcontent-c3] {
+      padding: 0px 15px 0 0;
+    }
+
+  .role-radioinpt-cont {
+    margin: 20px 0;
+  }
+
+    .role-radioinpt-cont td {
+      padding-right: 10px;
+    }
+</style>-->
+
+<div class="container-fluid">
+  <section>
+    <div class="sub-heading">Plan: <label>2018 appraisal plan 1</label></div>
+    <h1>Eligible Employees</h1>
+    <form novalidate
+          (ngSubmit)="onSubmit()" #companynamesForm="ngForm">
+      <fieldset>
+        <section class="form-1column">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="location">Location</label>
+                <select multiple [(ngModel)]="locationslst" name="location_valid" required #location_valid="ngModel">
+                  <option [ngValue]="undefined" disabled>Select Location</option>
+                  <option *ngFor="let x of locations" [selected]="x.value == 'Both'" [value]="x.value">{{x.value}}</option>
+                </select>
+                <div *ngIf="location_valid.invalid" class="alert alert-danger">invalid</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="HCC">HCC</label>
+                <select multiple [(ngModel)]="dohccdetaillst" name="hccdetails" required #hccdetails="ngModel">
+                  <option [ngValue]="undefined" disabled>Select HCC</option>
+                  <option [value]="'All'">All</option>
+                  <option *ngFor="let h of hccdetail" [value]="h.value">{{h.value}}</option>
+                </select>
+                <div *ngIf="hccdetails.invalid" class="alert alert-danger">invalid</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="CBFRole">CBF Role</label>
+                <select multiple [(ngModel)]="doroleslst" name="roledetails" required #roledetails="ngModel">
+                  <option [ngValue]="undefined" disabled>Select Role</option>
+                  <option [ngValue]="'All'" [selected]="'All'">All</option>
+                  <option *ngFor="let r of roles" [selected]="r.value == All" [value]="r.value">{{r.value}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="CBFLevel">CBF Level</label>
+                <select multiple [(ngModel)]="dolevelslst" name="leveldetails" required #leveldetails="ngModel">
+                  <option [ngValue]="undefined" disabled>Select CBF Level</option>
+                  <option [value]="'All'">All</option>
+                  <option *ngFor="let le of levels" [value]="le.value">{{le.value}}</option>
+                </select>
+                <div *ngIf="leveldetails.invalid" class="alert alert-danger">invalid</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="DateofJoining">Date of Joining</label>
+                <input type="text" name="DateofJoining" placeholder="Date picker"
+                       class="form-control"
+                       bsDatepicker>
+              </div>
+            </div>
+          </div>
+          <div class="more-collapse">
+            <a class="collapsed" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> </a>
+            <div class="employees-more"> </div>
+          </div>
+          <div class="collapse hide eligibleempsform" id="collapseExample">
+            <div class="card card-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="grade">Grade</label>
+                    <select multiple [(ngModel)]="dogradeslst" name="gradedetails" required #gradedetails="ngModel">
+                      <option [ngValue]="undefined" disabled>Select Grade</option>
+                      <option [value]="'All'">All</option>
+                      <option *ngFor="let g of grades" [value]="g.value">{{g.value}}</option>
+                    </select>
+                    <div *ngIf="gradedetails.invalid" class="alert alert-danger">invalid</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select multiple [(ngModel)]="genderslst" name="gendersdetails" required #gendersdetails="ngModel">
+                      <option [ngValue]="undefined" disabled>Select Gender</option>
+                      <option [value]="undefined">Both</option>
+                      <option *ngFor="let ge of genders" [value]="ge.value">{{ge.value}}</option>
+                    </select>
+                    <div *ngIf="gendersdetails.invalid" class="alert alert-danger">invalid</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <!--<div class="form-group">
+                    <label for="band">Band</label>
+                    <div *ngFor="let masdetails of masterdata |async">
+                      <select multiple [(ngModel)]="locations.location_Code" name="locations" required #locations="ngModel">
+                        <option [ngValue]="undefined" disabled>Select Level</option>
+                        <option>Band1</option>
+                        <option>Band2</option>
+                      </select>
+                    </div>
+                    <div *ngIf="bands.invalid" class="alert alert-danger">invalid</div>
+                  </div>-->
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="CompanyName">Company Name</label>
+                    <select multiple [(ngModel)]="companylst" name="companydetails" required #companydetails="ngModel">
+                      <option [ngValue]="undefined" disabled>Select Company</option>
+                      <option [value]="undefined">All</option>
+                      <option *ngFor="let c of company" [selected]="c.value == 'All'" [value]="c.value">{{c.value}}</option>
+                    </select>
+                    <div *ngIf="companydetails.invalid" class="alert alert-danger">invalid</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="project">Project</label>
+                    <select multiple [(ngModel)]="projectslst" name="projectdetails" required #projectdetails="ngModel">
+                      <option [ngValue]="undefined" disabled>Select Project</option>
+                      <option [value]="undefined">All</option>
+                      <option *ngFor="let p of projects" [value]="p.project_Name">{{p.project_Name}}</option>
+                    </select>
+                    <div *ngIf="projectdetails.invalid" class="alert alert-danger">invalid</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="StatusofEmployee">Status of Employee</label>
+                    <select multiple [(ngModel)]="statuslst" name="statusdetails" required #statusdetails="ngModel">
+                      <option [ngValue]="undefined" disabled>Select Employee Status</option>
+                      <option [value]="undefined">All</option>
+                      <option *ngFor="let s of status" [value]="s.value">{{s.value}}</option>
+                    </select>
+                    <div *ngIf="statusdetails.invalid" class="alert alert-danger">invalid</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="Employeeid">Select EmployeeID</label>
+                    <select multiple [(ngModel)]="employeeslst" name="employeedetails" required #employeedetails="ngModel">
+                      <option [ngValue]="undefined" disabled>Select Employee ID</option>
+                      <option [value]="undefined">All</option>
+                      <option *ngFor="let e of employees" [value]="e.employeE_ID">{{e.employeE_ID}}</option>
+                    </select>
+                  </div>
+                  <!--<div *ngIf="employeedetails.invalid" class="alert alert-danger">invalid</div>-->
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="proposedbudget">Proposed Budget</label>
+                    <div id="proposedbudget">49000000 <span>&#x20B9;</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="proposedbudget">Revision Type - % or Lumpsum Amount</label>
+                    <div id="proposedbudget">49000000 <span>&#x20B9;</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+      <button type="submit" class="btn btn-primary" [disabled]="!companynamesForm.form.valid">Save</button>
+      <button type="submit" class="btn btn-primary" (click)="toggleDisplay(companynamesForm)">Business Rules</button>
+      <button type="button" class="btn btn-primary" (click)="multiselectngform(companynamesForm)">SHOW EMPLOYEES</button>
+
+      <!--<button type="button"
+              class="btn btn-primary" (click)="multiselectngform(companynamesForm)">
+        SHOW EMPLOYEES
+      </button>-->
+
+
+
+
+      <div class="backdrop" [ngStyle]="{'display':display}"></div>
+
+      <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+
+        <div class="modal-dialog modal-lg" role="document" style="width:1000px;">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h1>ELIGIBLE LIST OF EMPLOYEES</h1>
+              <button type="button" class="close" aria-label="Close" (click)="closeModalDialog()"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="container-fluid">
+                <section project="showemployees">
+                  <section class="custom-table-grid table-responsive">
+                    <ng2-smart-table class="table-bordered" [settings]="settings1" [source]="source" (userRowSelect)="handleGridSelected($event)" #grdTags></ng2-smart-table>
+                  </section>
+                </section>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" (click)="exclude()">Exclude</button>
+              <button type="button" class="btn btn-default" (click)="closeModalDialog()">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="role-radioinpt-cont" *ngIf="toggleDisplayState">
+        <table>
+          <tr>
+            <td *ngFor="let entry of option">
+              <input type="radio" name="options"
+                     [checked]="entry.optionId == 0"
+                     [value]="entry.optionId"
+                     (change)="onSelectionChange(entry.optionId)">{{ entry.description }}</td>
+          </tr>
+        </table>
+        <section project="eligibleemployees-tab">
+          <ul class="tabs">
+            <li (click)="Offshore()">
+              <input type="radio" name="tabs" id="tab1" checked />
+              <label for="tab1">Offshore</label>
+              <div id="tab-content1" class="tab-content">
+                <section project="eligible-emp-busns-accrdn">
+                  <div class="accord-btn pull-right"><button class="btn btn-primary">Save</button></div>
+                  <div style="clear:both"></div>
+                  <div *ngFor="let t of selectedhccbl">
+                    <div id="accordion" role="tablist">
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                          <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#{{t.value}}" (click)="GetRolesByHcc(t.hcc,companynamesForm)" aria-expanded="false" aria-controls="collapseTwo">
+                              {{t.value}}
+                            </a>
+                          </h5>
+                          <div id={{t.value}} class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" *ngIf="accordianfalse">
+                            <div class="card-body">
+                              <table st-table="rowCollection" class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Role</th>
+                                    <th *ngFor="let tablelevels of TableDataLevels">{{tablelevels.level}}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table class="border-none" *ngIf="isgetallgrades == true">
+                                        <tr><td>&nbsp;</td></tr>
+                                        <!--<tbody *ngFor="let g of masdetails.gradedetails">
+                                          <tr><td class="padd-cell">{{g.grade}}</td></tr>
+                                        </tbody>-->
+                                      </table>
+                                      <table class="border-none" *ngIf="isgetallgrades == false">
+                                        <tr><td>&nbsp;</td></tr>
+                                        <tbody *ngFor="let r of getrolesbyhcc">
+                                          <tr><td class="padd-cell">{{r.role}}</td></tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td *ngIf="isonelevelsselected==true">
+                                      <table class="borderright" *ngIf="isgetallgrades == true">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole1 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,4)"></div></td>
+                                        </tr>
+                                      </table>
+
+                                      <table class="borderright" *ngIf="isgetallgrades == false">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole1 of getrolesbyhcc">
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,4)"></div></td>
+                                          <!--<td class="padd-cell" *ngIf="employeerole.grade === editRow"><input id="myinput" name="myinput" type="text" [(ngModel)]="test"></td>-->
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                        </tr>
+                                      </table>
+                                    </td>
+
+                                    <td *ngIf="istwolevelsselected==true">
+
+                                      <table class="borderright" *ngIf="isgetallgrades == true">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole2 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.cat1}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat1}}" width="10" /></td>
+                                           <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat2}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat2}}" width="10" /></td>
+                                           <td class="padd-cell" (click)="toggleDisplay1(g.grade)" *ngIf="g.grade !== editRow">{{employeerole.cat3}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat3}}" /></td>
+                                           <td class="padd-cell" (click)="toggleDisplay1(g.grade)" *ngIf="g.grade !== editRow">{{employeerole.cat4}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,2)"></div> </td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,4)"></div></td>
+                                        </tr>
+                                      </table>
+
+                                      <table class="borderright" *ngIf="isgetallgrades == false">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole2 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,2)"></div> </td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,4)"></div></td>
+                                      </table>
+                                    </td>
+                                    <td *ngIf="isthreelevelsselected==true">
+
+                                      <table class="borderright" *ngIf="isgetallgrades == true">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole3 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(g.grade)" *ngIf="g.grade !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,4)"></div></td>
+                                        </tr>
+                                      </table>
+                                      <table class="borderright" *ngIf="isgetallgrades == false">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole3 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,4)"></div></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </li>
+
+            <li (click)="Onsite()">
+              <input type="radio" name="tabs" id="tab2" />
+              <label for="tab2">Onsite</label>
+              <div id="tab-content2" class="tab-content">
+                <section project="eligible-emp-busns-accrdn">
+                  <div class="accord-btn pull-right"><button class="btn btn-primary">Save</button></div>
+                  <div style="clear:both"></div>
+                  <div *ngFor="let t of selectedhccbl">
+                    <div id="accordion" role="tablist">
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                          <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#{{t.value}}" (click)="GetRolesByHcc(t.hcc,companynamesForm)" aria-expanded="false" aria-controls="collapseTwo">
+                              {{t.value}}
+                            </a>
+                          </h5>
+                          <div id={{t.value}} class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" *ngIf="accordianfalse">
+                            <div class="card-body">
+                              <table st-table="rowCollection" class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Role</th>
+                                    <th *ngFor="let tablelevels of TableDataLevels">{{tablelevels.level}}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table class="border-none" *ngIf="isgetallgrades == true">
+                                        <tr><td>&nbsp;</td></tr>
+                                        <!--<tbody *ngFor="let g of masdetails.gradedetails">
+                                          <tr><td class="padd-cell">{{g.grade}}</td></tr>
+                                        </tbody>-->
+
+                                      </table>
+                                      <table class="border-none" *ngIf="isgetallgrades == false">
+                                        <tr><td>&nbsp;</td></tr>
+                                        <tbody *ngFor="let r of getrolesbyhcc">
+                                          <tr><td class="padd-cell">{{r.role}}</td></tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td *ngIf="isonelevelsselected==true">
+                                      <table class="borderright" *ngIf="isgetallgrades == true">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole1 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,4)"></div></td>
+                                        </tr>
+                                      </table>
+
+                                      <table class="borderright" *ngIf="isgetallgrades == false">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole1 of getrolesbyhcc">
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole1.role,1,4)"></div></td>
+                                          <!--<td class="padd-cell" *ngIf="employeerole.grade === editRow"><input id="myinput" name="myinput" type="text" [(ngModel)]="test"></td>-->
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                        </tr>
+                                      </table>
+                                    </td>
+
+                                    <td *ngIf="istwolevelsselected==true">
+
+                                      <table class="borderright" *ngIf="isgetallgrades == true">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole2 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.cat1}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat1}}" width="10" /></td>
+                                           <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat2}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat2}}" width="10" /></td>
+                                           <td class="padd-cell" (click)="toggleDisplay1(g.grade)" *ngIf="g.grade !== editRow">{{employeerole.cat3}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat3}}" /></td>
+                                           <td class="padd-cell" (click)="toggleDisplay1(g.grade)" *ngIf="g.grade !== editRow">{{employeerole.cat4}}</td>
+                                           <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,2)"></div> </td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,4)"></div></td>
+                                        </tr>
+                                      </table>
+
+                                      <table class="borderright" *ngIf="isgetallgrades == false">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole2 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,2)"></div> </td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole2.role,2,4)"></div></td>
+                                      </table>
+                                    </td>
+                                    <td *ngIf="isthreelevelsselected==true">
+
+                                      <table class="borderright" *ngIf="isgetallgrades == true">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole3 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.grade)" *ngIf="employeerole.grade !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(g.grade)" *ngIf="g.grade !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.grade === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,4)"></div></td>
+                                        </tr>
+                                      </table>
+                                      <table class="borderright" *ngIf="isgetallgrades == false">
+                                        <tr>
+                                          <td class="padd-cell" *ngFor="let cate of TableData.Cat">{{cate.name}}</td>
+                                        </tr>
+                                        <tr *ngFor="let employeerole3 of getrolesbyhcc">
+                                          <!--<td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat1}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat1}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat2}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat2}}" width="10" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat3}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat3}}" /></td>
+                                          <td class="padd-cell" (click)="toggleDisplay1(employeerole.key)" *ngIf="employeerole.key !== editRow">{{employeerole.Cat4}}</td>
+                                          <td class="padd-cell" *ngIf="employeerole.key === editRow"><input type="text" value="{{employeerole.Cat4}}" /></td>-->
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,1)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,2)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,3)"></div></td>
+                                          <td class="padd-cell"><div contentEditable edit_type="click" (blur)="onRowClick($event.target.textContent,t.value,employeerole3.role,3,4)"></div></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </form>
+  </section>
+</div>
+

@@ -1,0 +1,57 @@
+<section class="header-section">
+  <nav class="navbar navbar-default" style="background-color: rgb(154, 240, 128)">
+    <div class="container-fluid">
+      <div class="navbar-header container-fluid">
+
+
+        <a class="navbar-brand navbar-right mrgleft20" href="#"><img src="assets/images/RoyalCottage_white.png" border="0" height="60" /><div class="logo_heading">Hotels & Resorts</div></a>
+        <div class="pull-right">
+          <div class="dropdown bell-notify open">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+
+              <img src="assets/images/bell-header.png" alt="logo-bell">
+              <span>1</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>Documents uploaded by Pranaya</li>
+
+            </ul>
+
+          </div>
+          <div class="dropdown">
+
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Welcome, Administrator &nbsp; </span> <i class="fa fa-angle-down fa-6" aria-hidden="true"></i>
+            </button>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+              <a id="user_logout" href="/Account/Logout">Log out</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</section>
+<div class="wrapper">
+  <section class="left-nav">
+    <nav id="sidebar">
+      <nav-menu></nav-menu>
+    </nav>
+  </section>
+  <button type="button" id="sidebarCollapse" class="navbar-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div id="content" class="sidebar-collapse">
+    <app-messages></app-messages>
+    <router-outlet></router-outlet>   
+  </div>
+</div>
+
+
+

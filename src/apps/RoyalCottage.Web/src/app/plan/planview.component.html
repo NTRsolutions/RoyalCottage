@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>View Plan</h1>
+    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0">
+      <ngb-panel title="Basic Info">
+        <ng-template ngbPanelContent>
+          <h2>Plan Basic Info here.</h2>
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel title="Eligible Employees">
+        <ng-template ngbPanelContent>
+          <h2>Eligible employee content here.</h2>
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel title="Budget Simulation">
+        <ng-template ngbPanelContent>
+          <h2>Budget simulation content here.</h2>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+</div>

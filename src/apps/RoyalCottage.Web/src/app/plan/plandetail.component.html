@@ -1,0 +1,100 @@
+<div class="container-fluid">
+  <section project="udpateplan">
+    <h1>Update Plan</h1>
+    <!--ngFor="let plan of plan | async"-->
+    <form novalidate (ngSubmit)="onSubmit()" #planDetailForm="ngForm" >
+      <fieldset>
+        <section class="form-1column">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Plan Name <span class="mandatory">*</span></label>&nbsp;
+                <input type="text" minlength="12" maxlength="30" name="name" [(ngModel)]="plan.name" #name="ngModel" required>
+
+                <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+                  <div *ngIf="name.errors.required">
+                    Name is required.
+                  </div>
+                  <div *ngIf="name.hasError('minlength')">
+                    Plan Name must be at least 12 characters long.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Description</label>
+                <textarea name="description" [(ngModel)]="plan.description" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Plan Type <span class="mandatory">*</span></label>
+                <select [(ngModel)]="plan.planTypeId" name="myPlanType" required #plantype="ngModel">
+                  <option [ngValue]="null" disabled>Select Plan Type</option>
+                  <option *ngFor="let opt of plantypeslist" [value]="opt.id" [selected]="selected">{{opt.name}}</option>
+                </select>
+                <div *ngIf="plantype.invalid && plantype.touched" class="alert alert-danger">
+                  Plan type is required.
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Plan Start Date <span class="mandatory">*</span></label>
+                <input type="text" name="StartDate"
+                       [(ngModel)]="plan.StartDate" required #StartDate="ngModel"
+                       placeholder="Datepicker"
+                       class="form-control"
+                       bsDatepicker>
+                <!--<input type="date" name="StartDate"
+                [(ngModel)]="plan.StartDate" required #StartDate="ngModel">-->
+                <div *ngIf="StartDate.invalid && StartDate.touched" class="alert alert-danger">
+                  Plan Start is required.
+                </div>
+                <div *ngIf="plan.StartDate>plan.EndDate && EndDate.touched" class="alert alert-danger">
+                  Start date should be less than end date
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Plan End Date <span class="mandatory">*</span></label>&nbsp;
+                <input type="text"
+                       placeholder="Datepicker"
+                       name="EndDate"
+                       class="form-control"
+                       [(ngModel)]="plan.EndDate" required #EndDate="ngModel"
+                       bsDatepicker>
+                <!--<input type="date" name="EndDate"
+                [(ngModel)]="plan.EndDate" required #EndDate="ngModel">-->
+                <div *ngIf="EndDate.invalid && EndDate.touched" class="alert alert-danger">
+                  Plan End is required.
+                </div>
+                <!--</div>-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+
+      <button type="submit"
+              class="btn btn-primary" [disabled]=" plan.StartDate>plan.EndDate || !planDetailForm.form.valid">
+        Save
+      </button>
+
+
+    </form>
+
+  </section>
+</div>

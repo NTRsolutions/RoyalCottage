@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <section project="listplan">    
+    <section class="custom-table-grid">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Plan Name<i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+            <th>Plan Type<i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+            <th>Created By<i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+            <th>Created Date<i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+            <th>Modified By<i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+            <th>Modified Date<i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let plan of Plans | async">
+            <td>
+              <span>{{plan.name}}</span>
+            </td>
+            <td>
+              <span>{{plan.planName}}</span>
+            </td>
+            <td>
+              <span>CreatedBy</span>
+            </td>
+            <!--<td>
+              <span>{{plan.createdBy}}</span>
+            </td>-->
+            <td>
+              <span>{{plan.createdOn | date:"dd/MM/yyyy HH:mm:SS" }}</span>
+            </td>
+            <td>
+              <span>ModifiedBy</span>
+            </td>
+            <!--<td>
+              <span>{{plan.updatedBy }}</span>
+            </td>-->
+            <td>
+              <span *ngIf="plan.updatedOn !='0001-01-01T00:00:00'">{{plan.updatedOn | date:"dd/MM/yyyy HH:mm:SS"}}</span>
+            </td>
+
+            <td>
+              <button class="btn btn-default" type="button" (click)="onEdit(plan.id)">Edit</button>
+            </td>
+            <td>
+              <button class="btn btn-default" type="button" (click)="onDelete(plan.id,plan.name)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+</div>

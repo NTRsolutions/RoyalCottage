@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <section project="udpateplantype">
+    <h1>Update Plan Type</h1>
+
+    <form novalidate (ngSubmit)="onSubmit()" #planTypeDetailForm="ngForm">
+      <fieldset>
+        <section class="form-1column">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Plan type name <span class="mandatory">*</span></label>
+                <input type="text" class="form-control" name="pname" [(ngModel)]="planType.name" required maxlength="50" #pname="ngModel">
+                <div *ngIf="pname.invalid" class="alert alert-danger">
+                  <div *ngIf="pname.errors.required">
+                    Plan type name is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Description</label>
+                <textarea name="pdescription" [(ngModel)]="planType.description" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+      <button type="submit" class="btn btn-primary" [disabled]="!planTypeDetailForm.form.valid">
+        Submit
+      </button>
+    </form>
+  </section>
+</div>

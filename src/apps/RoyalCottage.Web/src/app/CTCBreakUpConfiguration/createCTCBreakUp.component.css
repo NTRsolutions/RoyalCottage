@@ -1,0 +1,41 @@
+.thead-dark {
+  background: #666666;
+  color: #fff;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 12px;
+  border-bottom: solid 1px #dedede !important;
+  border-top: 0px;
+}
+
+table {
+  border: solid 1px #dedede !important;
+}
+
+.btn-default {
+  background: #d9261c;
+  color: #fff;
+  border-radius: 0px;
+  border: 0px;
+}
+
+  .btn-default:hover {
+    background: #333;
+    color: #fff;
+  }
+
+.form-control {
+  /* width:40%; */
+}
+
+label {
+  font-weight: normal;
+}
+
+.heading-bars {
+  font-size: 14px;
+  border-bottom: solid 1px #b4b4b4;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}

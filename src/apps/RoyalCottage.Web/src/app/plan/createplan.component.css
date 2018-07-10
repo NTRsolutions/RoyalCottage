@@ -1,0 +1,45 @@
+/* form css*/
+[project="createplan"] .form-control {
+  border-radius: 0px;
+  box-shadow: none;
+  border: solid 1px #ccc;
+}
+
+label {
+  font-size: 14px;
+}
+
+[project="createplan"] .alert-danger {
+  background: transparent;
+  border: 0;
+  padding: 5px 0 0 0px;
+  color: #d9261c;
+}
+
+[project="createplan"] h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus,
+.btn-primary.disabled:hover, .btn-primary[disabled].focus,
+.btn-primary[disabled]:focus, .btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary.focus, fieldset[disabled]
+.btn-primary:focus, fieldset[disabled] .btn-primary:hover, .btn-primary {
+  background: #d9261c;
+  border-radius: 0px;
+  border: 0;
+}
+
+form {
+  padding: 10px;
+}
+
+.modal-open .ui-datepicker {
+  z-index: 1151 !important;
+}
+
+.btn {
+  padding: 6px 18px;
+}
+/*end of form css*/

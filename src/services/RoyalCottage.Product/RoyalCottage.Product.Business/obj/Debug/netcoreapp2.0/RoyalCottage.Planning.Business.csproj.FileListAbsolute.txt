@@ -1,0 +1,16 @@
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.csprojAssemblyReference.cache
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.AssemblyInfo.cs
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.deps.json
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.dll
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.csprojAssemblyReference.cache
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.AssemblyInfo.cs
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.pdb
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.dll
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.pdb
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.csproj.CopyComplete
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.dll
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Business.pdb

@@ -1,0 +1,13 @@
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.csprojAssemblyReference.cache
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\services\Sonata.CWB.Planning\Sonata.CWB.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.AssemblyInfo.cs
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.deps.json
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.dll
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.AssemblyInfo.cs
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.pdb
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.dll
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.pdb
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.Models.csprojAssemblyReference.cache

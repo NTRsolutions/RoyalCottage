@@ -1,0 +1,20 @@
+
+
+<ul class="list-unstyled components">
+  <li *ngFor="let menu of menus" [routerLinkActive]="['link-active']" >
+    <a  *ngIf="menu.isParent===false" [routerLink]="[menu.link]" id="{{menu.id}}"><i class="{{menu.class}}" ></i>{{menu.title}} </a>
+    <a *ngIf="menu.isParent===true" [href]="[menu.href]" data-toggle="collapse" aria-expanded="false">{{menu.title}}</a>
+    <ul *ngIf="menu.isParent===true" class="collapse list-unstyled" >
+      <li *ngFor="let subItem of menu.subItems" [routerLinkActive]="['link-active']" >
+        <a [routerLink]="[subItem.link]">{{subItem.title}}</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+

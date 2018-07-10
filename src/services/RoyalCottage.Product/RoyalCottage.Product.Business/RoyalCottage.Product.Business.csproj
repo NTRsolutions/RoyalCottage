@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RoyalCottage.Framework.Domain" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RoyalCottage.Product.Models\RoyalCottage.Product.Models.csproj" />
+  </ItemGroup>
+
+</Project>
