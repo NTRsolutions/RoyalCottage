@@ -14,4 +14,3 @@ E:\RoyalCottage\src\framework\RoyalCottage.Framework.Core\obj\Debug\netstandard2
 E:\RoyalCottage\src\framework\RoyalCottage.Framework.Core\obj\Debug\netstandard2.0\RoyalCottage.Framework.Core.AssemblyInfo.cs
 E:\RoyalCottage\src\framework\RoyalCottage.Framework.Core\obj\Debug\netstandard2.0\RoyalCottage.Framework.Core.dll
 E:\RoyalCottage\src\framework\RoyalCottage.Framework.Core\obj\Debug\netstandard2.0\RoyalCottage.Framework.Core.pdb
-E:\RoyalCottage\src\framework\RoyalCottage.Framework.Core\obj\Debug\netstandard2.0\RoyalCottage.Framework.Core.csprojAssemblyReference.cache

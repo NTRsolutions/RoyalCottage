@@ -219,7 +219,7 @@
           "ref/netstandard1.3/_._": {}
         }
       },
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -1776,14 +1776,13 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "NETStandard.Library/2.0.1": {
-      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+    "NETStandard.Library/2.0.3": {
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
-      "path": "netstandard.library/2.0.1",
+      "path": "netstandard.library/2.0.3",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -1900,7 +1899,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.1.nupkg.sha512",
+        "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -5285,7 +5284,7 @@
     ".NETStandard,Version=v2.0": [
       "Couchbase.Extensions.DependencyInjection >= 2.0.1",
       "CouchbaseNetClient >= 2.5.10",
-      "NETStandard.Library >= 2.0.1",
+      "NETStandard.Library >= 2.0.3",
       "RoyalCottage.Framework.Core >= 1.0.0"
     ]
   },
@@ -5295,6 +5294,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "E:\\RoyalCottage\\src\\framework\\RoyalCottage.Framework.Couchbase\\RoyalCottage.Framework.Couchbase.csproj",
       "projectName": "RoyalCottage.Framework.Couchbase",
@@ -5314,7 +5316,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "E:\\CWB\\src\\nuget": {},
         "E:\\RoyalCottage\\src\\nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -5336,23 +5337,23 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Couchbase.Extensions.DependencyInjection": {
+          "RoyalCottage.Framework.Core": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "1.0.0"
           },
           "CouchbaseNetClient": {
             "target": "Package",
-            "version": "[2.5.10, )"
+            "version": "2.5.10"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.1, )",
+            "version": "2.0.3",
             "autoReferenced": true
           },
-          "RoyalCottage.Framework.Core": {
+          "Couchbase.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "2.0.1"
           }
         },
         "imports": [

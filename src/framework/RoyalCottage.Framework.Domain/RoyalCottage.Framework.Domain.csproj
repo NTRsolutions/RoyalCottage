@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RoyalCottage.Framework.Couchbase" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\RoyalCottage.Framework.Core\RoyalCottage.Framework.Core.csproj" />
     <ProjectReference Include="..\RoyalCottage.Framework.Couchbase\RoyalCottage.Framework.Couchbase.csproj" />
   </ItemGroup>
