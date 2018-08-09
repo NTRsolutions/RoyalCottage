@@ -1,12 +1,12 @@
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.csprojAssemblyReference.cache
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.AssemblyInfo.cs
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Business.deps.json
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Business.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Business.pdb
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.pdb
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.csprojAssemblyReference.cache
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.csproj.CoreCompileInputs.cache
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.AssemblyInfoInputs.cache
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.AssemblyInfo.cs
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.csproj.CopyComplete
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Business\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Business.pdb

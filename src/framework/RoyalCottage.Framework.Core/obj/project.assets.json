@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "Y/NeVXSsH8T97ToiTvnVLJ3iUjWekGsxjW5BooOGsFYeTRqjpFGJnifCeTXuydAFrg7NFIVMogBkaEBGRcwqvQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -181,9 +181,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "E:\\RoyalCottage\\src\\framework\\RoyalCottage.Framework.Core\\RoyalCottage.Framework.Core.csproj",
       "projectName": "RoyalCottage.Framework.Core",
@@ -203,6 +200,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "E:\\CWB\\CompensationWorkbench\\src\\nuget": {},
         "E:\\RoyalCottage\\src\\nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -223,7 +221,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.3",
+            "version": "[2.0.3, )",
             "autoReferenced": true
           }
         },

@@ -75,25 +75,29 @@ namespace RoyalCottage.Planning.WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime applicationLifetime)
         {
-                if (env.IsDevelopment())
-                {
-                    app.UseDeveloperExceptionPage();
-                }
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler();
+            }
 
-                app.UseMvc();
-                app.UseCors("CORS");
-                app.UseSwagger();
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "RoyalCottage.Planning.WebApi");
+            app.UseMvc();
+            app.UseCors("CORS");
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "RoyalCottage.Planning.WebApi");
 
-                });
+            });
 
-                // When application is stopped gracefully shutdown Couchbase connections
-                applicationLifetime.ApplicationStopped.Register(() =>
-                {
-                    app.ApplicationServices.GetRequiredService<ICouchbaseLifetimeService>().Close();
-                });
+            // When application is stopped gracefully shutdown Couchbase connections
+            applicationLifetime.ApplicationStopped.Register(() =>
+            {
+                app.ApplicationServices.GetRequiredService<ICouchbaseLifetimeService>().Close();
+            });
         }
     }
 }

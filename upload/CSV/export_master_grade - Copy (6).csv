@@ -1,0 +1,20 @@
+tenantId,typeId,id,Value,isActive
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b01,Front Desk Clerks,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b02,Porters,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b03,Concierges,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b04,Housekeeping,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b05,Room Service,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b06,Waiter/Waitress,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b07,Kitchen Staff,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b08,Supervisor of Guest Services,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b09,Front Desk Supervisor,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b10,Housekeeping Supervisor,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b11,Kitchen Manager,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b12,Restaurant Manager,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b13,Executive Chef,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b14,Marketing and Advertising,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b15,Accounting,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b16,Purchasing,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b17,Event Planner,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b18,Assistant Hotel Manager,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,ebf28901-041e-4b2e-8fb7-bc9a8cbb034b,e547a3da-ed5c-4a8f-a212-81dcd0ee4b19,Hotel Manager,TRUE

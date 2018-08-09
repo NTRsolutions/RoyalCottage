@@ -14,7 +14,7 @@ namespace RoyalCottage.Product.Models
         public string CbfRole { get; set; }
         public string Grade { get; set; }
         public string Hcc { get; set; }
-        public Guid Plan { get; set; }
+        public Guid Product { get; set; }
         public string Value { get; set; }
     }
 }

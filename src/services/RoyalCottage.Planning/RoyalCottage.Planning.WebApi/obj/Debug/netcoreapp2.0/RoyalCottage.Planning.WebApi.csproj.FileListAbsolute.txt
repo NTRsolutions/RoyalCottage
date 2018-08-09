@@ -19,3 +19,5 @@ E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.WebApi\
 E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Planning.WebApi.pdb
 E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.WebApi.dll
 E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Planning.WebApi.pdb
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.WebApi\bin\Debug\netcoreapp2.0\appsettings.Development.json
+E:\RoyalCottage\src\services\RoyalCottage.Planning\RoyalCottage.Planning.WebApi\bin\Debug\netcoreapp2.0\appsettings.json

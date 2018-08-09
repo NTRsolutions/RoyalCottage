@@ -1,9 +1,9 @@
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.deps.json
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.pdb
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.csprojAssemblyReference.cache
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.csproj.CoreCompileInputs.cache
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.AssemblyInfoInputs.cache
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.AssemblyInfo.cs
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.pdb
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.Models\obj\Debug\netcoreapp2.0\RoyalCottage.Product.Models.csprojAssemblyReference.cache

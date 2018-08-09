@@ -5,12 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="appsettings.Debug.json" />
+    <Content Remove="appsettings.Development.Debug.json" />
+    <Content Remove="appsettings.Development.Release.json" />
+    <Content Remove="appsettings.Release.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Couchbase.Extensions.DependencyInjection" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.SlowCheetah" Version="3.1.66" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
     <PackageReference Include="RoyalCottage.Framework.WebApi" Version="1.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
@@ -21,8 +29,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="appsettings.Debug.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Include="appsettings.Development.Debug.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.Development.json</DependentUpon>
+    </None>
+    <None Include="appsettings.Development.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.Development.json</DependentUpon>
+    </None>
+    <None Include="appsettings.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RoyalCottage.Planning.Business\RoyalCottage.Planning.Business.csproj" />
     <ProjectReference Include="..\RoyalCottage.Planning.Models\RoyalCottage.Planning.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <Content Update="appsettings.json">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
   </ItemGroup>
 
 </Project>

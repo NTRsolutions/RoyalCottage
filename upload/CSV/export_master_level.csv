@@ -1,0 +1,4 @@
+tenantId,typeId,id,Value,isActive
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,195d640d-d86f-49fb-bf00-b11831016d11,2014fabf-eead-45a7-858a-0ca4427c0002,Level 1,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,195d640d-d86f-49fb-bf00-b11831016d11,2014fabf-eead-45a7-858a-0ca4427c0003,Level 2,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,195d640d-d86f-49fb-bf00-b11831016d11,2014fabf-eead-45a7-858a-0ca4427c0004,Level 3,TRUE

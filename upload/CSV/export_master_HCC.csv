@@ -1,0 +1,7 @@
+tenantId,typeId,id,Value,isActive
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,afb8f7eb-0fe3-4f3b-84da-e33a773b6a9e,62680095-0a39-48c9-9996-3748c017c000,Administration (Admin),TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,afb8f7eb-0fe3-4f3b-84da-e33a773b6a9e,62680095-0a39-48c9-9996-3748c017c001,Finance (FIN),TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,afb8f7eb-0fe3-4f3b-84da-e33a773b6a9e,62680095-0a39-48c9-9996-3748c017c002,Human Resources (HRD),TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,afb8f7eb-0fe3-4f3b-84da-e33a773b6a9e,62680095-0a39-48c9-9996-3748c017c003,Infrastructure Management Services (IMS),TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,afb8f7eb-0fe3-4f3b-84da-e33a773b6a9e,62680095-0a39-48c9-9996-3748c017c004,International Marketing Group (IMG),TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,afb8f7eb-0fe3-4f3b-84da-e33a773b6a9e,62680095-0a39-48c9-9996-3748c017c005,Sales & Marketing,TRUE

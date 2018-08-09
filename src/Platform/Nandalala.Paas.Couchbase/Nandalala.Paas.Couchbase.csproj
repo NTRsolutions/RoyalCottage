@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Sonata</Authors>
+    <Company>Sonata Software Ltd</Company>
+    <Product>Sonata Platform Couchbase</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\nuget\Nandalala.Paas.Couchbase\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CouchbaseNetClient" Version="2.5.5" />
+    <PackageReference Include="Unity" Version="5.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nandalala.Paas.Core\Nandalala.Paas.Core.csproj" />
+  </ItemGroup>
+
+</Project>

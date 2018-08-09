@@ -1,0 +1,35 @@
+tenantId,typeId,id,Value,isActive
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65000,Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65001,Employee and Applicant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65002,Former Spouse,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65003,Retiree,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65004,Candidate,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65005,Contractor Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65006,Former Domestic Partner,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65007,Contingent Worker,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65008,Ex - Contractor Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65009,Consultant Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65010,Applicant and Ex-applicant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65011,Surviving Domestic Partner Family Member,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65012,Ex-employee and Applicant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65013,Participant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65014,Domestic Partner,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65015,Ex - Regular Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65016,External,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65017,Beneficiary,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65018,Ex-employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65019,Former Family Member,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65020,Surviving Family Member,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65021,Surviving Spouse,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65022,Surviving Domestic Partner,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65023,Ex-contingent Worker,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65024,FT Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65025,Ex - Applicant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65026,Contact,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65027,Regular Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65028,Ex - Consultant Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65029,Applicant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65030,Dependent,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65031,Ex-applicant,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65032,iRecruitment Registered User,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,1d01b67d-ae4c-4105-b9c6-222d027a1526,f17b3f9b-43de-4c56-bb89-a077a2f65033,Ex - FT Employee,TRUE

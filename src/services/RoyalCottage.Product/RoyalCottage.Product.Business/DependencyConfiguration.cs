@@ -9,10 +9,10 @@ namespace RoyalCottage.Product.Business
     {
         public static void AddDomain(this IServiceCollection services)
         {
-            services.AddScoped<IPlanService, PlanService>();
-            services.AddScoped<IPlanRepository, PlanRepository>();
-            services.AddScoped<IPlanTypeService, PlanTypeService>();
-            services.AddScoped<IPlanTypeRepository, PlanTypeRepository>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductTypeService, ProductTypeService>();
+            services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
         }
     }
 }

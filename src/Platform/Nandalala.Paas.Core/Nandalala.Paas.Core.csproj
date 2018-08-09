@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Sonata</Authors>
+    <Product>Sonata Platform Core</Product>
+    <Company>Sonata Software Ltd</Company>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputPath>..\..\nuget\Nandalala.Paas.Core\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="IoC\Interfaces\" />
+    <Folder Include="IoC\Unity\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="SimpleInjector" Version="4.0.12" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+    <PackageReference Include="Unity" Version="5.7.3" />
+  </ItemGroup>
+
+</Project>

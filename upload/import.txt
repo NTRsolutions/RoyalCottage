@@ -1,0 +1,28 @@
+Create User
+"userName": "cwb",
+    "password": "Couch#123@18",
+    "bucket":"CWB"
+Create Bucket
+CWB
+Create Index
+CREATE PRIMARY INDEX `#primary` ON `CWB` 
+
+Import all data
+
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b Employee -d file://E:/Pranaya/Projects/upload/CSV/export_emp_headers.csv -generate-key Employee::%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_Company_Name.csv -generate-key Company::%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_gender.csv -generate-key Gender::%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_grade.csv -generate-key Grade:%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_HCC.csv -generate-key HCC:%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_role.csv -generate-key Role:%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_status.csv -generate-key Statuses:%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_active_proj_list.csv -generate-key Projects:%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_level.csv -generate-key Level:%id%
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/export_master_location.csv -generate-key Location:%id%
+
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/Menu.csv -generate-key Menu::%id%
+
+cbimport.exe csv -c couchbase://127.0.0.1:8091 -u Administrator -p cwb@123 -b MasterData -d file://E:/Pranaya/Projects/upload/CSV/MenuItem.csv -generate-key MenuItem::%id%
+
+To delete
+delete from Employee where tenantId="fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e" and typeId="c320545f-ea39-460e-98d2-65f33b35a5f4"

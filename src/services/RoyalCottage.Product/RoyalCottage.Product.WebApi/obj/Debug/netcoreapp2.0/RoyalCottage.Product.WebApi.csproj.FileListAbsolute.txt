@@ -1,3 +1,7 @@
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.csproj.CoreCompileInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.AssemblyInfoInputs.cache
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.AssemblyInfo.cs
+E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.csprojAssemblyReference.cache
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.dll.config
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.deps.json
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.runtimeconfig.json
@@ -8,10 +12,6 @@ E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bi
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Business.pdb
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\bin\Debug\netcoreapp2.0\RoyalCottage.Product.Models.pdb
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.csprojAssemblyReference.cache
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.csproj.CoreCompileInputs.cache
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.AssemblyInfoInputs.cache
-E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.AssemblyInfo.cs
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.csproj.CopyComplete
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.dll
 E:\RoyalCottage\src\services\RoyalCottage.Product\RoyalCottage.Product.WebApi\obj\Debug\netcoreapp2.0\RoyalCottage.Product.WebApi.pdb

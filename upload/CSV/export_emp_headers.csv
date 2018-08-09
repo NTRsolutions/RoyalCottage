@@ -1,0 +1,3 @@
+tenantId,typeId,id,EMPLOYEE_ID,EMPLOYEE_NAME,HOME_LOCATION,COUNTRY,EMPLOYEE_ORGANIZATION,EMP_ROLE,EMP_ROLE_LEVEL,EMPLOYEE_DOJ,GRADE,GENDER,Company_Name,PROJECT_NAME,STATUS,isActive
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,90bf4aa9-9846-4a28-bee5-f673bfc17699,2563678b-ec56-4b3e-843b-2f279df10000,1000,Pranaya B Singh,Bangalore,India,Administration,,,2-Apr-86,Director,Male,Royal Cottage,Admin,Regular Employee,TRUE
+fe5d2b85-b5f4-4f2b-8f59-f8623ab92a4e,90bf4aa9-9846-4a28-bee5-f673bfc17699,2563678b-ec56-4b3e-843b-2f279df10001,1001,Debasis Muduli,Bhubaneswar,India,CEO,,,2-Apr-86,Director,Male,Royal Cottage,Admin,Regular Employee,TRUE
