@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "Y/NeVXSsH8T97ToiTvnVLJ3iUjWekGsxjW5BooOGsFYeTRqjpFGJnifCeTXuydAFrg7NFIVMogBkaEBGRcwqvQ==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -176,33 +176,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pranaya.bs\\.nuget\\packages\\": {},
+    "C:\\Users\\naveenkumar.s\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\RoyalCottage\\src\\framework\\RoyalCottage.Framework.Core\\RoyalCottage.Framework.Core.csproj",
+      "projectUniqueName": "D:\\Pranaya\\royal-cottage\\src\\framework\\RoyalCottage.Framework.Core\\RoyalCottage.Framework.Core.csproj",
       "projectName": "RoyalCottage.Framework.Core",
-      "projectPath": "E:\\RoyalCottage\\src\\framework\\RoyalCottage.Framework.Core\\RoyalCottage.Framework.Core.csproj",
-      "packagesPath": "C:\\Users\\pranaya.bs\\.nuget\\packages\\",
-      "outputPath": "E:\\RoyalCottage\\src\\framework\\RoyalCottage.Framework.Core\\obj\\",
+      "projectPath": "D:\\Pranaya\\royal-cottage\\src\\framework\\RoyalCottage.Framework.Core\\RoyalCottage.Framework.Core.csproj",
+      "packagesPath": "C:\\Users\\naveenkumar.s\\.nuget\\packages\\",
+      "outputPath": "D:\\Pranaya\\royal-cottage\\src\\framework\\RoyalCottage.Framework.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pranaya.bs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\naveenkumar.s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "E:\\CWB\\CompensationWorkbench\\src\\nuget": {},
-        "E:\\RoyalCottage\\src\\nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.widex.com/nuget": {}
       },
       "frameworks": {
         "netstandard2.0": {
